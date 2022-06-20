@@ -15,6 +15,7 @@ const PostSchema = new Schema(
     description: {
       type: String,
       required: [true, "Enter the description"],
+      unique: true,
     },
   },
   { timestamps: { createdAt: "created_at" } }
